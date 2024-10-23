@@ -1,0 +1,23 @@
+.products {
+  display: flex;
+  max-width: 80%;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+@media (max-width: 1209px) {
+  .products {
+    max-width: 100%;
+    justify-content: center;
+    border: 1px solid black;
+  }
+}
+@media (max-width: 658px) {
+  .products {
+    width: 100%;
+    /* margin: 0; */
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+  }
+}

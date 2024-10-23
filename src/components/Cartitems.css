@@ -1,0 +1,130 @@
+.cartitem {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  background-color: rgb(221, 243, 252);
+  border-radius: 1rem;
+}
+
+.cartitem img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.cartitem .item-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cartitem .item-qty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 5rem;
+  /* border: 1px solid red; */
+  font-weight: 600;
+}
+
+.cartitem .item-qty button {
+  font-weight: 6;
+  font-size: 1.3rem;
+}
+
+.cartitem > button {
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: rgb(26, 117, 156);
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+@media (max-width: 975px) {
+  .cartitem {
+    font-size: 0.9rem;
+  }
+  .cartitem > button {
+    border: none;
+    padding: 0.3rem 0.7rem;
+    background-color: rgb(26, 117, 156);
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+
+  .cartitem .item-qty button {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .cartitem .item-title {
+    display: block;
+  }
+}
+@media (max-width: 760px) {
+  .cartitem {
+    font-size: 0.6rem;
+  }
+  .cartitem > button {
+    border: none;
+    padding: 0.1rem 0.2rem;
+    background-color: rgb(26, 117, 156);
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+
+  .cartitem .item-qty button {
+    font-weight: 400;
+    font-size: 0.6rem;
+  }
+
+  .cartitem .item-qty {
+    min-width: 3.5rem;
+  }
+
+  .cartitem img {
+    width: 60px;
+    height: 70px;
+  }
+
+  .cartitem .item-title {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .cartitem {
+    display: block;
+    text-align: start;
+    padding-left: 2rem;
+    font-size: 0.7rem;
+    border: 1px solid red;
+  }
+
+  .cartitem .item-qty {
+    min-width: 1rem;
+    display: block;
+    margin: 1rem;
+  }
+}
+@media (max-width: 355px) {
+  .cartitem {
+    display: block;
+    text-align: start;
+    padding-left: 1rem;
+    font-size: 0.7rem;
+    border: 1px solid red;
+  }
+
+  .cartitem .item-qty {
+    min-width: 1rem;
+    display: block;
+    margin: 1rem;
+  }
+}

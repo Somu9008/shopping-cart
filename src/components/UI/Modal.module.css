@@ -1,0 +1,55 @@
+.modalBackDrop {
+  /* border: 1px solid red; */
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(64, 64, 64, 0.9);
+}
+
+.modalContent {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  background-color: white;
+  max-height: 500px;
+  height: 500px;
+  width: 900px;
+  z-index: 2;
+  /* border: 1px solid red; */
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 975px) {
+  .modalContent {
+    width: 600px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 762px) {
+  .modalContent {
+    width: 500px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 762px) {
+  .modalContent {
+    width: 400px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .modalContent {
+    width: 270px;
+    font-size: small;
+  }
+}
+@media (max-width: 355px) {
+  .modalContent {
+    width: 200px;
+    font-size: 0.5rem;
+  }
+}
